@@ -3,7 +3,7 @@
 #include <time.h>
 
 /*
- * main - Check if random number is between set bounds
+ * main - Entry point
  *
  * Return: Always 0 (Success)
  */
