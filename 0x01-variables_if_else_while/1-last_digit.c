@@ -2,8 +2,8 @@
 #include <stdlib.h>
 #include <time.h>
 
-/*
- * main - Entry point
+/**
+ * main - Check if last digit is in bounds
  *
  * Return: Always 0 (Success)
  */
