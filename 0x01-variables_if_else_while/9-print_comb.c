@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- * main - Print single number combinations
+ * main - Print single number combinations in ascending order
  *
  * Return: Always 0 (Success)
  */
@@ -13,6 +13,8 @@ int main(void)
 	while (n < 58)
 	{
 		putchar(n);
+		if (n == 57)
+			break;
 		putchar(',');
 		putchar(' ');
 		n++;
