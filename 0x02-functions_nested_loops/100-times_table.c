@@ -17,6 +17,7 @@ void print_times_table(int n)
 			{
 				_putchar(',');
 				_putchar(' ');
+				_putchar(' ');
 				product = rows * cols;
 				if (product <= 9 || product == 99)
 					_putchar(' ');
