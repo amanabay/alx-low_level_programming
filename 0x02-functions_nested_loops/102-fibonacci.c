@@ -8,13 +8,13 @@
  */
 int main(void)
 {
-	int m, n, o, i;
+	long int m, n, o, i;
 
 	m = 1;
 	n = 2;
 	for (i = 0; i < 50; i++)
 	{
-		printf("%d", m);
+		printf("%lu", m);
 		if (i == 49)
 			break;
 		printf(", ");
