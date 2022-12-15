@@ -5,6 +5,7 @@
  * Desc - File containing prototypes(declarations) for
  * all functions in the 0x04-more_functions_nested_loops category
  */
+int _putchar(char c);
 int _isupper(int c);
 int _isdigit(int c);
 int mul(int a, int b);
