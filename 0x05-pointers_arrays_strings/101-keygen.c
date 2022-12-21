@@ -9,9 +9,9 @@
  */
 int main(void)
 {
-	srand(time(NULL));
 	int sum, pass, last;
 
+	srand(time(NULL));
 	for (sum = 0; sum <= (2772 - 127); sum += pass)
 	{
 		pass = (rand() % 128);
