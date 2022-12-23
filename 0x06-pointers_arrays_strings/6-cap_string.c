@@ -8,11 +8,9 @@
  */
 char *cap_string(char *s)
 {
-	int len = 0, i = 0;
+	int i = 0;
 
-	while (s[i++])
-		len++;
-	for (i = 0; i < len; i++)
+	for (i = 0; s[i] != '\0'; i++)
 	{
 		if ((s[i] == ' ' || s[i] == '\t' || s[i] == '\n' || s[i] == ','
 			|| s[i] == ';' || s[i] == '.' || s[i] == '!' || s[i] == '?'
