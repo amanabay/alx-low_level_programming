@@ -6,7 +6,7 @@
  *
  * @s1: first string
  * @s2: second string to be concatenated
- * Return: pointer to newly allocated memory containing 
+ * Return: pointer to newly allocated memory containing
  * concatenated string of @s1 and @s2
  */
 char *str_concat(char *s1, char *s2)
@@ -28,7 +28,7 @@ char *str_concat(char *s1, char *s2)
 		return (NULL);
 	for (i = 0; i < len1; i++)
 		cs[i] = s1[i];
-	for (j = 0; j < len2; j++)
+	for (j = 0; j <= len2; j++)
 	{
 		cs[i] = s2[j];
 		i++;
