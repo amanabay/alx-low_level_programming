@@ -12,7 +12,6 @@
  */
 dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 {
-	unsigned int i;
 	dlistint_t *newnode;
 	dlistint_t *chead = *h;
 
@@ -24,7 +23,7 @@ dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 	if (idx == 0)
 		return (add_dnodeint(h, n));
 
-	for (i = 0; i < idx; idx++)
+	for ( ; idx != 1; idx--)
 	{
 		chead = chead->next;
 		if (chead == NULL)
