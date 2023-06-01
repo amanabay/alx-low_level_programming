@@ -1,6 +1,6 @@
 CC_FLAGS = -Wall -Werror -Wextra -pedantic
 CC = gcc $(CC_FLAGS)
-SRC = $(filter-out 100-Makefile m.h,$(wildcard *))
+SRC = main.c school.c
 OBJ = $(patsubst %.c,%.o,$(SRC))
 NAME = school
 
