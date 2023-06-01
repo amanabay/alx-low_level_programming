@@ -1,0 +1,18 @@
+CC_FLAGS = -Wall -Werror -Wextra -pedantic
+CC = gcc $(CC_FLAGS)
+SRC = $(filter-out Makefile m.h,$(wildcard *))
+OBJ = $(patsubst %.c,%.o,$(SRC))
+NAME = school
+
+.PHONY : all clean oclean fclean re
+
+all: m.h $(OBJ)
+	$(CC) $(OBJ) -o $(NAME)
+clean:
+	$(RM) *~ $(NAME)
+oclean:
+	$(RM) $(OBJ)
+
+fclean: clean oclean
+
+re: oclean all
