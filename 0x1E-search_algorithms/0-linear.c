@@ -2,10 +2,10 @@
 #include <stdio.h>
 
 /**
- * linear_search - Searches for a value in a sorted array of integers 
+ * linear_search - Searches for a value in a sorted array of integers
  *		using the linear search algorithm
  *
- * @array: array to search in 
+ * @array: array to search in
  * @size: size of array
  * @value: value to search in array
  *
@@ -28,5 +28,4 @@ int linear_search(int *array, size_t size, int value)
 	}
 
 	return (-1);
-	
 }
